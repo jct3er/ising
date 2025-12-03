@@ -99,7 +99,7 @@ def plot_fun():
         for _ in range(nsweep):
             sweep(beta, h, spin)
             total_mag += np.sum(spin[1:-1, 1:-1])
-            en = energy(beta, spin, h)
+            en = energy(beta, spin, h)/2
             E += en
             E_square += en**2
             
